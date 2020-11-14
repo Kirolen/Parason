@@ -1,0 +1,230 @@
+* {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 80px;
+  background-color: #221958;
+  width: 100%;
+  position: fixed;
+}
+
+header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: inherit;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .container a {
+  margin: 0 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.under {
+  background-color: #221958;
+  height: calc(100vh - 80px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.under .underheader {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.under .underheader .text {
+  margin: 0 20px;
+}
+
+.under .underheader .text h1 {
+  font-size: 40px;
+  color: white;
+}
+
+.under .underheader .text p {
+  color: white;
+  font-size: 20px;
+}
+
+.mainone {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  height: calc(100vh - 80px);
+}
+
+.mainone h1 {
+  font-weight: 700;
+}
+
+.mainone .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainone .column div {
+  border: 1px solid grey;
+  background-color: grey;
+  margin: 0 5px;
+}
+
+.mainone p {
+  font-size: 20px;
+}
+
+.main1 {
+  max-width: 1200px;
+  margin: 0 0;
+  text-align: center;
+  height: 600px;
+}
+
+.main1 .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+}
+
+.main1 .column div {
+  margin: 0 5px;
+  background-color: #faf9ff;
+}
+
+.vel {
+  font-size: 15px;
+  max-width: 640px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.main1 h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+button {
+  border-radius: 30px;
+  font-size: 23px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  -webkit-transition: all .4s ease;
+  transition: all .4s ease;
+  border: 1px solid white;
+}
+
+button:hover {
+  background: #221958;
+  border: 1px solid white;
+  color: white;
+}
+
+.column h2 {
+  text-align: left;
+}
+
+.column p {
+  text-align: left;
+}
+
+.text {
+  margin: 0 auto;
+  max-width: 640px;
+  margin-top: 100px;
+}
+
+.maintwo {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.maintwo h2 {
+  font-size: 32px;
+}
+
+.maintwo span {
+  font-size: 20px;
+}
+
+.maintwo button {
+  margin-top: 20px;
+  border: 1px solid #221958;
+}
+
+.useless {
+  padding-top: 20px;
+  margin: 0 auto;
+  max-width: 700px;
+  text-align: center;
+}
+
+.main3 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1200px;
+  margin-top: 70px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main3 img {
+  margin-left: 30px;
+}
+
+.card {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.card div {
+  width: 200px;
+  height: 200px;
+  background-color: #faf9ff;
+}
+
+.card div:nth-child(even) {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.card div:hover,
+.column div:hover {
+  border: 0.1px solid rgba(0, 0, 0, 0.125);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+          box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+}
+/*# sourceMappingURL=style.css.map */
