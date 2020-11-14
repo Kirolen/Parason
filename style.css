@@ -57,50 +57,32 @@ header .container a {
 
 .under .underheader .text {
   margin: 0 20px;
+  color: white;
 }
 
 .under .underheader .text h1 {
   font-size: 40px;
-  color: white;
 }
 
 .under .underheader .text p {
-  color: white;
-  font-size: 20px;
-}
-
-.mainone {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  height: calc(100vh - 80px);
-}
-
-.mainone h1 {
-  font-weight: 700;
-}
-
-.mainone .column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.mainone .column div {
-  border: 1px solid grey;
-  background-color: grey;
-  margin: 0 5px;
-}
-
-.mainone p {
   font-size: 20px;
 }
 
 .main1 {
   max-width: 1200px;
-  margin: 0 0;
+  margin: 0 auto;
   text-align: center;
   height: 600px;
+}
+
+.main1 .text {
+  margin: 0 auto;
+  max-width: 640px;
+  margin-top: 100px;
+}
+
+.main1 .text h1 {
+  font-size: 40px;
 }
 
 .main1 .column {
@@ -110,16 +92,17 @@ header .container a {
   margin-top: 100px;
 }
 
+.main1 .column h2 {
+  text-align: left;
+}
+
+.main1 .column p {
+  text-align: left;
+}
+
 .main1 .column div {
   margin: 0 5px;
   background-color: #faf9ff;
-}
-
-.vel {
-  font-size: 15px;
-  max-width: 640px;
-  margin: 0 auto;
-  margin-bottom: 20px;
 }
 
 .main1 h1 {
@@ -142,20 +125,6 @@ button:hover {
   background: #221958;
   border: 1px solid white;
   color: white;
-}
-
-.column h2 {
-  text-align: left;
-}
-
-.column p {
-  text-align: left;
-}
-
-.text {
-  margin: 0 auto;
-  max-width: 640px;
-  margin-top: 100px;
 }
 
 .maintwo {
@@ -222,9 +191,72 @@ button:hover {
 }
 
 .card div:hover,
-.column div:hover {
+.column div:hover,
+.pricecards div:hover {
   border: 0.1px solid rgba(0, 0, 0, 0.125);
-  -webkit-box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
-          box-shadow: 0px 10px 20px 0px rgba(33, 20, 106, 0.1);
+  -webkit-box-shadow: 0px 30px 60px 0px rgba(33, 20, 106, 0.1);
+          box-shadow: 0px 30px 60px 0px rgba(33, 20, 106, 0.1);
+}
+
+.pricecards div:hover .buy {
+  background-color: #221958;
+  color: white;
+}
+
+.diagrama {
+  width: 100%;
+}
+
+.diagrama .form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 600px 550px;
+      grid-template-columns: 600px 550px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.price {
+  max-width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.price .text {
+  text-align: center;
+}
+
+.price .pricecards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 300px 300px 300px;
+      grid-template-columns: 300px 300px 300px;
+  height: 540px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.price .pricecards div {
+  background-color: #faf9ff;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.price .pricecards div h1 {
+  font-size: 60px;
+}
+
+.price .pricecards div .red {
+  color: red;
+}
+
+.price .pricecards div button {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
