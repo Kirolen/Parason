@@ -148,6 +148,14 @@ button:hover {
   border: 1px solid #221958;
 }
 
+.nedd {
+  background-color: #faf9ff;
+  height: 650px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .useless {
   padding-top: 20px;
   margin: 0 auto;
@@ -193,7 +201,6 @@ button:hover {
 .card div:hover,
 .column div:hover,
 .pricecards div:hover {
-  border: 0.1px solid rgba(0, 0, 0, 0.125);
   -webkit-box-shadow: 0px 30px 60px 0px rgba(33, 20, 106, 0.1);
           box-shadow: 0px 30px 60px 0px rgba(33, 20, 106, 0.1);
 }
@@ -205,6 +212,7 @@ button:hover {
 
 .diagrama {
   width: 100%;
+  background: #faf9ff;
 }
 
 .diagrama .form {
@@ -228,6 +236,10 @@ button:hover {
 
 .price .text {
   text-align: center;
+}
+
+.price .text .choose {
+  font-size: 40px;
 }
 
 .price .pricecards {
@@ -258,5 +270,113 @@ button:hover {
 
 .price .pricecards div button {
   margin-top: 20px;
+}
+
+.man {
+  width: 100%;
+  height: 50vh;
+}
+
+.man .about {
+  margin-top: 40px;
+  background-color: #faf9ff;
+  margin: 0 auto;
+  width: 800px;
+  height: 30vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.man .about .iam {
+  margin-top: 50px;
+  background-color: white;
+}
+
+.logo {
+  width: 100%;
+  height: 200px;
+  margin-top: 100px;
+}
+
+.logo div {
+  margin: 0 auto;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo div img {
+  -webkit-filter: grayscale(1) opacity(0.5);
+          filter: grayscale(1) opacity(0.5);
+}
+
+.logo div img:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+footer {
+  background: #0e1424;
+  height: 30vh;
+  padding: 120px 0 120px;
+}
+
+footer .footer-area {
+  height: 30vh;
+  background-color: #0e1424;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer .footer-area div {
+  width: 12%;
+}
+
+footer .footer-area div li {
+  margin-top: 15px;
+  list-style-type: none;
+}
+
+footer .footer-area h2 {
+  color: white;
+  font-size: 20px;
+}
+
+footer .footer-area a {
+  color: grey;
+  text-decoration: none;
+}
+
+footer .footer-area p {
+  color: grey;
+}
+
+footer .text-1 {
+  color: grey;
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer .text-1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-control {
+  height: 50px;
+  width: 300px;
 }
 /*# sourceMappingURL=style.css.map */
