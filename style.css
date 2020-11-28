@@ -1,10 +1,21 @@
-* {
-  font-family: 'Rajdhani', sans-serif;
-}
-
 body {
   padding: 0;
   margin: 0;
+}
+
+body p,
+body span,
+body a {
+  font-family: 'Roboto', sans-serif;
+}
+
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  font-family: 'Rajdhani', sans-serif;
 }
 
 header {
@@ -12,6 +23,7 @@ header {
   background-color: #221958;
   width: 100%;
   position: fixed;
+  z-index: 5;
 }
 
 header .container {
@@ -30,6 +42,7 @@ header .container {
 }
 
 header .container a {
+  font-family: 'Roboto', sans-serif;
   margin: 0 10px;
   font-size: 25px;
   text-decoration: none;
@@ -72,7 +85,8 @@ header .container a {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  height: 600px;
+  height: 400px;
+  margin-bottom: 200px;
 }
 
 .main1 .text {
@@ -113,8 +127,8 @@ header .container a {
 
 button {
   border-radius: 30px;
-  font-size: 23px;
-  font-weight: 500;
+  height: 50px;
+  width: 120px;
   border: 1px solid transparent;
   -webkit-transition: all .4s ease;
   transition: all .4s ease;
@@ -127,37 +141,38 @@ button:hover {
   color: white;
 }
 
-.maintwo {
+.nedd {
+  background-color: #f5f5f5;
+  height: 500px;
+  margin-bottom: 200px;
+}
+
+.nedd .maintwo {
   max-width: 1200px;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.maintwo h2 {
-  font-size: 32px;
-}
-
-.maintwo span {
-  font-size: 20px;
-}
-
-.maintwo button {
-  margin-top: 20px;
-  border: 1px solid #221958;
-}
-
-.nedd {
-  background-color: #faf9ff;
-  height: 650px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
+.nedd .maintwo h2 {
+  font-size: 32px;
+}
+
+.nedd .maintwo span {
+  font-size: 20px;
+}
+
+.nedd .maintwo button {
+  margin-top: 20px;
+  border: 1px solid #221958;
+}
+
 .useless {
-  padding-top: 20px;
+  padding: 25px 0 85px 0;
   margin: 0 auto;
   max-width: 700px;
   text-align: center;
@@ -190,7 +205,7 @@ button:hover {
 .card div {
   width: 200px;
   height: 200px;
-  background-color: #faf9ff;
+  background-color: #f5f5f5;
 }
 
 .card div:nth-child(even) {
@@ -212,7 +227,8 @@ button:hover {
 
 .diagrama {
   width: 100%;
-  background: #faf9ff;
+  background: #f5f5f5;
+  margin-top: 100px;
 }
 
 .diagrama .form {
@@ -235,7 +251,9 @@ button:hover {
 }
 
 .price .text {
+  margin: 0 auto;
   text-align: center;
+  max-width: 700px;
 }
 
 .price .text .choose {
@@ -255,46 +273,64 @@ button:hover {
 }
 
 .price .pricecards div {
-  background-color: #faf9ff;
+  background-color: #f5f5f5;
   text-align: center;
   margin-left: 30px;
+  color: #797979;
 }
 
 .price .pricecards div h1 {
   font-size: 60px;
 }
 
-.price .pricecards div .red {
+.price .pricecards div span {
   color: red;
 }
 
 .price .pricecards div button {
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .man {
   width: 100%;
   height: 50vh;
+  background-color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
 }
 
 .man .about {
   margin-top: 40px;
-  background-color: #faf9ff;
   margin: 0 auto;
   width: 800px;
   height: 30vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
+}
+
+.man .about h1 {
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.man .about .aliq {
+  padding-bottom: 40px;
 }
 
 .man .about .iam {
   margin-top: 50px;
   background-color: white;
+}
+
+.man .about .iam img,
+.man .about .iam h3,
+.man .about .iam p {
+  position: relative;
+  top: -40;
+}
+
+.man .about .iam .text-background {
+  background-color: #f5f5f5;
+  padding-top: 25px;
 }
 
 .logo {
@@ -350,18 +386,47 @@ footer .footer-area div li {
   list-style-type: none;
 }
 
-footer .footer-area h2 {
+footer .footer-area .subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .footer-area .subscribe .form-control {
+  height: 40px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0 12px 0 12px;
+}
+
+footer .footer-area .subscribe button {
+  padding: 0 10px 0 10px;
+  border-radius: 0;
+  height: 30px;
+  width: 150px;
+  font-size: 15px;
+  position: relative;
+  left: -40;
+}
+
+footer .footer-area h4 {
   color: white;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 footer .footer-area a {
   color: grey;
   text-decoration: none;
+  font-size: 15px;
 }
 
 footer .footer-area p {
   color: grey;
+  font-size: 15px;
 }
 
 footer .text-1 {
@@ -375,8 +440,23 @@ footer .text-1 a {
   text-decoration: none;
 }
 
-.form-control {
-  height: 50px;
-  width: 300px;
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.media .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.media .social img {
+  width: 15px;
+  height: 15px;
 }
 /*# sourceMappingURL=style.css.map */

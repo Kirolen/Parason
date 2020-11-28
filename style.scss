@@ -1,10 +1,19 @@
-        * {
-            font-family: 'Rajdhani', sans-serif;
-        }
-        
         body {
             padding: 0;
             margin: 0;
+            p,
+            span,
+            a {
+                font-family: 'Roboto', sans-serif;
+            }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: 'Rajdhani', sans-serif;
+            }
         }
         
         header {
@@ -12,6 +21,7 @@
             background-color: #221958;
             width: 100%;
             position: fixed;
+            z-index: 5;
             .container {
                 display: flex;
                 justify-content: space-between;
@@ -20,6 +30,7 @@
                 height: inherit;
                 align-items: center;
                 a {
+                    font-family: 'Roboto', sans-serif;
                     margin: 0 10px;
                     font-size: 25px;
                     text-decoration: none;
@@ -54,7 +65,8 @@
             max-width: 1200px;
             margin: 0 auto;
             text-align: center;
-            height: 600px;
+            height: 400px;
+            margin-bottom: 200px;
             .text {
                 margin: 0 auto;
                 max-width: 640px;
@@ -88,8 +100,8 @@
         
         button {
             border-radius: 30px;
-            font-size: 23px;
-            font-weight: 500;
+            height: 50px;
+            width: 120px;
             border: 1px solid transparent;
             transition: all .4s ease;
             border: 1px solid white;
@@ -101,30 +113,30 @@
             color: white;
         }
         
-        .maintwo {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            h2 {
-                font-size: 32px;
-            }
-            span {
-                font-size: 20px;
-            }
-            button {
-                margin-top: 20px;
-                border: 1px solid #221958;
-            }
-        }
-        
         .nedd {
-            background-color: #faf9ff;
-            height: 650px;
-            align-items: center;
+            background-color: #f5f5f5;
+            height: 500px;
+            margin-bottom: 200px;
+            .maintwo {
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                h2 {
+                    font-size: 32px;
+                }
+                span {
+                    font-size: 20px;
+                }
+                button {
+                    margin-top: 20px;
+                    border: 1px solid #221958;
+                }
+            }
         }
         
         .useless {
-            padding-top: 20px;
+            padding: 25px 0 85px 0;
             margin: 0 auto;
             max-width: 700px;
             text-align: center;
@@ -148,7 +160,7 @@
             div {
                 width: 200px;
                 height: 200px;
-                background-color: #faf9ff;
+                background-color: #f5f5f5;
             }
             div:nth-child(even) {
                 margin-top: 30px;
@@ -171,7 +183,8 @@
         
         .diagrama {
             width: 100%;
-            background: #faf9ff;
+            background: #f5f5f5;
+            margin-top: 100px;
             .form {
                 display: grid;
                 grid-template-columns: 600px 550px;
@@ -187,7 +200,9 @@
             height: 100vh;
             margin: 0 auto;
             .text {
+                margin: 0 auto;
                 text-align: center;
+                max-width: 700px;
                 .choose {
                     font-size: 40px
                 }
@@ -199,17 +214,19 @@
                 justify-content: center;
                 margin-top: 100px;
                 div {
-                    background-color: #faf9ff;
+                    background-color: #f5f5f5;
                     text-align: center;
                     margin-left: 30px;
+                    color: #797979;
                     h1 {
                         font-size: 60px;
                     }
-                    .red {
+                    span {
                         color: red;
                     }
                     button {
                         margin-top: 20px;
+                        margin-bottom: 10px;
                     }
                 }
             }
@@ -218,18 +235,34 @@
         .man {
             width: 100%;
             height: 50vh;
+            background-color: #f5f5f5;
+            font-family: "Roboto", sans-serif;
             .about {
                 margin-top: 40px;
-                background-color: #faf9ff;
                 margin: 0 auto;
                 width: 800px;
                 height: 30vh;
-                justify-content: center;
-                align-items: center;
                 text-align: center;
+                h1 {
+                    padding-top: 20px;
+                    margin-bottom: 30px;
+                }
+                .aliq {
+                    padding-bottom: 40px;
+                }
                 .iam {
                     margin-top: 50px;
                     background-color: white;
+                    img,
+                    h3,
+                    p {
+                        position: relative;
+                        top: -40;
+                    }
+                    .text-background {
+                        background-color: #f5f5f5;
+                        padding-top: 25px;
+                    }
                 }
             }
         }
@@ -269,16 +302,38 @@
                         list-style-type: none;
                     }
                 }
-                h2 {
+                .subscribe {
+                    display: flex;
+                    align-items: center;
+                    .form-control {
+                        height: 40px;
+                        width: 300px;
+                        background: rgba(255, 255, 255, 0.2);
+                        border: 1px solid rgba(255, 255, 255, 0.2);
+                        padding: 0 12px 0 12px;
+                    }
+                    button {
+                        padding: 0 10px 0 10px;
+                        border-radius: 0;
+                        height: 30px;
+                        width: 150px;
+                        font-size: 15px;
+                        position: relative;
+                        left: -40;
+                    }
+                }
+                h4 {
                     color: white;
-                    font-size: 20px;
+                    font-size: 23px;
                 }
                 a {
                     color: grey;
                     text-decoration: none;
+                    font-size: 15px;
                 }
                 p {
                     color: grey;
+                    font-size: 15px;
                 }
             }
             .text-1 {
@@ -292,7 +347,14 @@
             }
         }
         
-        .form-control {
-            height: 50px;
-            width: 300px;
+        .media {
+            display: flex;
+            justify-content: space-between;
+            .social {
+                display: flex;
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
         }
